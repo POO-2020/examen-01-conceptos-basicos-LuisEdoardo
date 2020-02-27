@@ -15,14 +15,15 @@ class Main{
         let costo = 100
         let valor = 1
         let unidad = 'Kilogramo'
-        let ingrediente = new Ingrediente( new Cantidad(valor, unidad).getDescripcionC(), 'Queso', costo)
+        let ingrediente = new Ingrediente( 'Queso',new Cantidad(valor, unidad).getDescripcionC(), costo)
         console.log(`${ingrediente.getDescripcionI()}`)
     }
     probarReceta(){
         console.log('<----------------------Receta------------------------->')
-        let ingrediente = new Ingrediente(new Cantidad(100, 'gramos').getDescripcionC(), 'harina', 100)
-        let ingrediente2 = new Ingrediente(new Cantidad(5, 'rebanadas de').getDescripcionC(), 'piña', 230)
-
+        let ingrediente1 = new Ingrediente('harina',new Cantidad(100, 'gramos').getDescripcionC(), 100)
+        let ingrediente2 = new Ingrediente('piña',new Cantidad(5, 'rebanadas').getDescripcionC(), 230)
+        console.log(`${ingrediente1.getDescripcionI()}`)
+        console.log(`${ingrediente2.getDescripcionI()}`)
         
     }
 

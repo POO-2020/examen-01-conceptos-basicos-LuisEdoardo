@@ -9,10 +9,17 @@ export default class Receta{
             console.log(`${i+1} ${ingredientes}`)
         })
     }
+    agregarIngredientes(ingrediente){
+        this.ingredientes.push(ingrediente)
+    }
     getCosto(){
+        let total = 0
+        this.ingredientes.forEach((ingrediente, i) => {
+            total = (total + ingrediente)
+        })
 
     }
     imprimirEnConsola(){
-        return ``
+        return `${this.nombre} ${this.autor}`
     }
 }
