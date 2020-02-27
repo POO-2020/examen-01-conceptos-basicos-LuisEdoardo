@@ -54,7 +54,7 @@ Representa a una receta de cocina
   - (1 punto) getNumeroIngredientes(). Regresa el número de ingredientes que se incluyen en la receta.
   - (1 punto) getCosto(). Regresa el costo total de la receta
   - (1 punto) imprimirEnConsola(). Imprime el contenido de la receta en consola en el siguiente formato:
-  -
+
 
   Pizza Hawaiana
   Autor: Juan Pérez

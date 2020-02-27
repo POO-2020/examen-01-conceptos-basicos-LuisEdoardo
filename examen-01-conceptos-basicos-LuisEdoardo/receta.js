@@ -1,12 +1,14 @@
 export default class Receta{
-    constructor(autor, nombre, ingredientes){
+    constructor(autor, nombre){
         this.autor = autor
         this.nombre = nombre
-        this.ingredientes = ingredientes
+        this.ingredientes = new Array
     }
     getNumeroDeIngredientes(){
+        let numero = 0
         this.ingredientes.forEach((ingredientes, i) => {
             console.log(`${i+1} ${ingredientes}`)
+            
         })
     }
     agregarIngredientes(ingrediente){
@@ -17,9 +19,8 @@ export default class Receta{
         this.ingredientes.forEach((ingrediente, i) => {
             total = (total + ingrediente)
         })
-
     }
     imprimirEnConsola(){
-        return `${this.nombre} ${this.autor}`
+        return `${this.nombre} ${this.autor} ${this.ingredientes.forEach()}`
     }
 }

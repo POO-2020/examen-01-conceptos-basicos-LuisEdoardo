@@ -22,9 +22,8 @@ class Main{
         console.log('<----------------------Receta------------------------->')
         let ingrediente1 = new Ingrediente('harina',new Cantidad(100, 'gramos').getDescripcionC(), 100)
         let ingrediente2 = new Ingrediente('piña',new Cantidad(5, 'rebanadas').getDescripcionC(), 230)
-        console.log(`${ingrediente1.getDescripcionI()}`)
-        console.log(`${ingrediente2.getDescripcionI()}`)
-        
+        let receta = new Receta('Pizza Hawaiana', 'Juan Perez',ingrediente1, ingrediente2)
+        console.log(`${receta.imprimirEnConsola()}`)
     }
 
 }
