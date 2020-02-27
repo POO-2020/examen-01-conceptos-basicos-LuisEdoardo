@@ -11,6 +11,6 @@ export default class Ingrediente{
         this.nombre = nombre
     }
     getDescripcionI(){
-        return `Nombre: ${this.nombre}\n Cantidad: ${this.cantidad}\n Costo: ${this.costo}`
+        return ` ${this.nombre}  ${this.cantidad} |  $${this.costo} Pesos`
     }
 }
